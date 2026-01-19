@@ -1,0 +1,29 @@
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex; 
+}
+ ul{
+  gap: 20px;
+}
+.header-section{
+  justify-items: center;
+  align-self: center;
+  align-items: center;
+  background-image: url('./assets/hero-bg.png');
+  background-repeat: no-repeat no-repeat;
+  background-size: 300px, cover;
+  background-position: center;
+}
+.header-div{
+  text-align: center;
+}
