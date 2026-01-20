@@ -167,15 +167,27 @@ li a{
     width:300px;
     background-color: #230E3D;
 }
+.featured-div-sub{
+    padding:20px;
+    text-align: start;
+}
 iframe{
     border-radius: 40px 40px 0px 0px;
 }
-
-.custom-play-btn {
+.clock-div{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+.clock-div img{
+    width:20px;
+    height:20PX;
+}
+/*.custom-play-btn {
     position: absolute;
     top: 80;
     left: 70;
-    background: rgba(0,0,0,0.4); /* Dim the background slightly */
+    background: rgba(0,0,0,0.4);  Dim the background slightly 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,11 +199,11 @@ iframe{
 .play-icon {
     width: 70px;
     height: 70px;
-    /* YOUR GRADIENT APPLIED HERE */
+     YOUR GRADIENT APPLIED HERE 
     background: linear-gradient(135deg, #F7E93F, #FB09B4, #9100F8);
-    clip-path: polygon(20% 10%, 90% 50%, 20% 90%); /* Makes it a triangle shape */
+    clip-path: polygon(20% 10%, 90% 50%, 20% 90%);  Makes it a triangle shape 
     border-radius: 5px;
-}
+}*/
 
 
 .host-section{
@@ -302,6 +314,7 @@ iframe{
     grid-row:span 2;
 }
 .featured-div-all{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
@@ -319,9 +332,22 @@ iframe{
 
 
 @media screen and (min-width:576px) and (max-width:992px) {
-   .small-nav{
+   .menu-icon{
+        display: flex;
+        flex-direction: column;
+    }
+    .big-nav{
         display: none;
+    }
+    nav ul{
+        display: none;
+    }
+    .nav-button{
+    display: none;
     } 
+    .small-nav{
+        display: flex;
+    }
     .choose-div-total{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -338,6 +364,23 @@ iframe{
 .featured-div-all{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+}
+.host-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.social-icons{
+  
+    align-content: center;
+    text-align: center;
+    
+}
+.host-div-two{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 }
 @media screen and (min-width:992px) {
