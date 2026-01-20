@@ -229,8 +229,11 @@ bottom:100px;
     background-color: #230E3D;
 }
 .featured-div-sub{
-    padding:20px;
+    padding:0px 24px 0px 24px;
     text-align: start;
+}
+.featured-title{
+    font-size: 20px;
 }
 iframe{
     border-radius: 40px 40px 0px 0px;
