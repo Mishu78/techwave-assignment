@@ -161,6 +161,17 @@ li a{
     display: flex;
      gap:50px;
 }
+.featured-div-one i {
+    background: linear-gradient(135deg,#F7E93F,#FB09B4,#9100F8);
+    color: white;
+    align-content: center;
+    border: 1px solid linear-gradient(135deg,#F7E93F,#FB09B4,#9100F8);
+    border-radius: 100px;
+    width:30px;
+    height:30px;
+position: relative;
+bottom:100px;
+}
 .featured-div{
     border-radius: 40px;
     justify-self: center;
@@ -183,33 +194,13 @@ iframe{
     width:20px;
     height:20PX;
 }
-/*.custom-play-btn {
-    position: absolute;
-    top: 80;
-    left: 70;
-    background: rgba(0,0,0,0.4);  Dim the background slightly 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 10;
-    position:relative;
-}
-
-.play-icon {
-    width: 70px;
-    height: 70px;
-     YOUR GRADIENT APPLIED HERE 
-    background: linear-gradient(135deg, #F7E93F, #FB09B4, #9100F8);
-    clip-path: polygon(20% 10%, 90% 50%, 20% 90%);  Makes it a triangle shape 
-    border-radius: 5px;
-}*/
 
 
 .host-section{
    background-color: #1A0B2E;
     padding: 100px;
     text-align: center;
+    justify-items: center
     
 };
 
@@ -381,6 +372,10 @@ iframe{
     align-items: center;
     justify-content: center;
     justify-items: center;
+}
+.social-icons-two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 }
 @media screen and (min-width:992px) {
