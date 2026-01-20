@@ -139,3 +139,35 @@ li a{
 iframe{
     border-radius: 40px;;
 }
+.host-section{
+   background-color: #1A0B2E;
+    padding: 100px;
+};
+
+  .host-section .host-head{
+    width: 100%;
+    display: flex;
+ justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.social-icons{
+    gap:10px;
+    display: flex;
+}
+.social-icons-div{
+    width:40px;
+    height:40px;
+    align-content: center;
+    text-align: center;
+    border:1px solid rgba(83, 60, 114, 1);
+    border-radius: 100%;
+}
+.host-div{
+    align-items: center;
+    background-color: #230E3D;
+    display: flex;
+}
+.host-img-div{
+    padding-right:20px;
+}
