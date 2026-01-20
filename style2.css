@@ -155,7 +155,7 @@ li a{
     font-weight: 600;
 }
 .podcast-para{
-    font-size: 10px;
+    font-size: 14px;
     padding-bottom:20px;
 }
 /*animation*/
@@ -173,6 +173,10 @@ li a{
     text-align: center;
     padding:100px;
     background-color: rgba(26, 11, 46, 1);;
+}
+.choose-title{
+    font-size: 24px;
+    font-style: bold;
 }
 .choose-div{
     align-content: center;
