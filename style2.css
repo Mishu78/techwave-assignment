@@ -310,6 +310,10 @@ iframe{
     flex-direction: column;
     text-align: center;
 }
+.social-icons-two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 }
 
 
