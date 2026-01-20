@@ -9,8 +9,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
 
 }
 ul{
@@ -49,6 +49,7 @@ li a{
 }
 .header-div{
     text-align: center;
+    padding-top:20px;
 }
 .header-heading{
     color:white;
@@ -64,6 +65,7 @@ li a{
     color:white;
     font-size:13px;
     font-weight:200px;
+    padding-bottom:10px;
 }
 .primary-button{
     text-align: center;
@@ -71,6 +73,7 @@ li a{
     align-content: center;
     align-self: center;
     padding:10px;
+    border: none;
     border-radius: 30px;
     background: linear-gradient(135deg,#F7E93F,#FB09B4,#9100F8);
 }
@@ -82,8 +85,9 @@ li a{
     color:#00FF88;
 }
 .header-button{
- padding:10px;
- border-color: #00FF88;
+    margin-left:10px;
+    padding:12px 15px 10px 15px;
+    border: 1px solid #00FF88;
     border-radius: 30px;
     background-color: transparent;
 }
