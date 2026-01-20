@@ -24,6 +24,7 @@ li a{
     text-decoration: none;
 }
 .header-section{
+  justify-content: center;
   justify-items: center;
   align-self: center;
   align-items: center;
@@ -34,6 +35,7 @@ li a{
   padding:100px;
 }
 .header-circle{
+    padding-left:30px;
     background-image: url('./assets/hero-circle.png');
     width:300px;
     height:300px;
@@ -43,6 +45,7 @@ li a{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .header-div{
     text-align: center;
@@ -52,16 +55,26 @@ li a{
     font-size: 30px;
     font-weight: 600;
 }
+.header-heading-two{
+ color:white;
+    font-size: 30px;
+    font-weight: 600;
+}
 .header-para{
     color:white;
     font-size:13px;
     font-weight:200px;
 }
 .primary-button{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
     padding:10px;
     border-radius: 30px;
     background: linear-gradient(135deg,#F7E93F,#FB09B4,#9100F8);
 }
+
 .primary-color{
     color: white;
 }
@@ -73,6 +86,24 @@ li a{
  border-color: #00FF88;
     border-radius: 30px;
     background-color: transparent;
+}
+
+.primary-button,.header-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+}
+
+.new{
+    position: relative;
+    left:50px;
+    bottom:100px;
+    height:22px;
+    width:43px;
+    background-color:#00FF88 ;
+    border:none;
+    border-radius: 20px;
 }
 
 .podcast-section{
@@ -94,7 +125,6 @@ li a{
 }
 .choose-section{
     text-align: center;
-    justify-self: center;
     padding:100px;
     background-color: rgba(26, 11, 46, 1);;
 }
@@ -106,6 +136,7 @@ li a{
     padding:30px;
 }
 .choose-div-total{
+    text-align:start;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
@@ -137,21 +168,40 @@ li a{
     background-color: #230E3D;
 }
 iframe{
-    border-radius: 40px;;
+    border-radius: 40px 40px 0px 0px;
 }
+
+.custom-play-btn {
+    position: absolute;
+    top: 80;
+    left: 70;
+    background: rgba(0,0,0,0.4); /* Dim the background slightly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    position:relative;
+}
+
+.play-icon {
+    width: 70px;
+    height: 70px;
+    /* YOUR GRADIENT APPLIED HERE */
+    background: linear-gradient(135deg, #F7E93F, #FB09B4, #9100F8);
+    clip-path: polygon(20% 10%, 90% 50%, 20% 90%); /* Makes it a triangle shape */
+    border-radius: 5px;
+}
+
+
 .host-section{
    background-color: #1A0B2E;
     padding: 100px;
+    text-align: center;
     
 };
 
   .host-section h2{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    justify-content: center;
-    text-align: center;
     margin-bottom: 50px;
 }
 .social-icons{
@@ -167,6 +217,7 @@ iframe{
     border-radius: 100%;
 }
 .host-div{
+    text-align: start;
     border-radius: 40px;
     padding:30px;
     align-items: center;
@@ -197,6 +248,94 @@ iframe{
 .social-icons-two-div img{
     width:24px;
     height:24px;
+}
+
+.menu-icon{
+    width:30px;
+    display: none;
+    flex-direction: column;
+    gap:6px;
+    cursor: pointer;
+}
+.menu-icon span{
+    height:3px;
+    width:100%;
+    background: white;
+    border-radius: 5px;
+}
+@media screen and (max-width:576px) {
+
+    .menu-icon{
+        display: flex;
+        flex-direction: column;
+    }
+    .big-nav{
+        display: none;
+    }
+    nav ul{
+        display: none;
+    }
+    .nav-button{
+    display: none;
+    } 
+    .small-nav{
+        display: flex;
+    }
+    .podcast-div{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .choose-div-total{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tall{
+    grid-column: span 2;
+}
+.wide{
+    grid-row:span 2;
+}
+.wide-two{
+    grid-column:span 2;
+}
+.small{
+    grid-row:span 2;
+}
+.featured-div-all{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+   .small-nav{
+        display: none;
+    } 
+    .choose-div-total{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+     .tall{
+    grid-column: span 2;
+}
+.wide-two{
+    grid-column:span 2;
+}
+.small{
+    grid-column:span 2;
+}
+.featured-div-all{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
+@media screen and (min-width:992px) {
+    .small-nav{
+        display: none;
+    }
+    
 }
 
 
