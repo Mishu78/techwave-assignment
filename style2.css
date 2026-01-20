@@ -11,8 +11,9 @@ nav{
     box-sizing: border-box;
     padding-left: 80px;
     padding-right: 80px;
-
+    border-bottom: 1px solid rgb(252, 50, 201);
 }
+
 ul{
     display: flex;
     gap:30px;
@@ -141,8 +142,10 @@ li a{
     
 }
 .podcast-div{
+    align-items: center;
+    border-top:1px solid #FB09B4;
     display: flex;
-    gap:20px;
+    gap:90px;
     justify-self: center;
     opacity: 0;
     animation: slideLeft 0.9s ease forwards;
@@ -153,6 +156,7 @@ li a{
 }
 .podcast-para{
     font-size: 10px;
+    padding-bottom:20px;
 }
 /*animation*/
 @keyframes slideLeft {
